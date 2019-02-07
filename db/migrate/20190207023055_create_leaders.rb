@@ -5,6 +5,8 @@ class CreateLeaders < ActiveRecord::Migration[5.2]
       t.integer :attack
       t.integer :defense
       t.integer :health_points
+      t.integer :location_id
+
       t.timestamps
     end
   end

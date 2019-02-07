@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2019_02_07_023055) do
     t.integer "attack"
     t.integer "defense"
     t.integer "health_points"
+    t.integer "location_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -27,7 +28,6 @@ ActiveRecord::Schema.define(version: 2019_02_07_023055) do
   create_table "locations", force: :cascade do |t|
     t.string "name"
     t.string "city_information"
-    t.integer "leader_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
